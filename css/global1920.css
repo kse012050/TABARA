@@ -1,0 +1,14 @@
+br.mobile{display: none;}
+
+/* 해더 */
+header{height: 100px; padding-inline: 40px;}
+header h1 a{width: 118px;}
+header > button::after{width: 36px; margin-left: 12px;}
+
+
+/* 푸터 */
+footer{padding-block: 80px 100px; position: relative;}
+footer strong{font-size: 18px; line-height: 21px; margin-bottom: 30px;}
+footer address{font-size: 15px; line-height: 18px;}
+footer address dl:not(:last-of-type){margin-bottom: 10px;}
+footer::after{width: 190px; position: absolute; right: max(calc((100% - 1080px) / 2), 20px); bottom: 100px;}

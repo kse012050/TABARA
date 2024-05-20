@@ -1,0 +1,36 @@
+
+/* 메인 페이지 */
+.mainPage section h2{font-weight: 700;}
+.mainPage :is(.smartArea, .toArea){height: var(--fullHeight); display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+/* 스마트한 방법 */
+.mainPage{text-align: center;}
+.mainPage .smartArea{background: url(../images/img-mainBG01.png) no-repeat center / cover; color: white;}
+.mainPage .smartArea h2::after{content: ''; display: block; aspect-ratio: 466 / 70; background: url(../images/logo-white.png) no-repeat center / cover; margin-inline: auto;}
+
+/* 부산에서 타바라로 */
+.mainPage .toArea{background: url(../images/img-mainBG02.png) no-repeat center / cover; color: white;}
+.mainPage .toArea ul li::before{content: ''; display: block; aspect-ratio: 1; margin-inline: auto; background: url(../images/icon-main.png) no-repeat left top calc(100% / (var(--totalIdx) - 1) * var(--styleIdx)) / 100%;}
+.mainPage .toArea ul li strong{font-weight: 700; display: block;}
+
+/* 떠올려주세요 */
+.mainPage .thinkArea ul{color: white; width: 100%;}
+.mainPage .thinkArea ul li{display: flex; flex-direction: column; justify-content: center; align-items: center; background-position: left top calc(100% / (var(--totalIdx) - 1) * var(--styleIdx)); background-size: 100%;}
+.mainPage .thinkArea ul li strong{display: block; font-weight: 700;}
+
+/* 이용가이드 */
+.mainPage .userGuideArea{background-color: #f8f8f8; padding-inline: calc((100% - 1080px) / 2);}
+.mainPage .userGuideArea ul{display: flex; justify-content: center;}
+.mainPage .userGuideArea ul li button{font-weight: 700;}
+.mainPage .userGuideArea ul li button.active{position: relative; color: black;}
+.mainPage .userGuideArea ul li button.active::after{content: ''; position: absolute; left: 0; width: 100%; background-color: #E6007E;}
+.mainPage .userGuideArea div ol{display: none;}
+.mainPage .userGuideArea div ol li::before{content: ''; display: block; aspect-ratio: 250 / 460; background-position: left top calc(100% / (var(--totalIdx) - 1) * var(--styleIdx)); background-size: 100%;}
+.mainPage .userGuideArea div ol li{counter-increment: userGuide;}
+.mainPage .userGuideArea div ol:nth-of-type(2) li{counter-reset: 4;}
+.mainPage .userGuideArea div ol:nth-of-type(1) li::before{background-image: url(../images/img-userGuide01.png);}
+.mainPage .userGuideArea div ol:nth-of-type(2) li::before{background-image: url(../images/img-userGuide02.png);}
+.mainPage .userGuideArea div ol li strong{font-weight: 700; display: block; margin-bottom: 12px;}
+.mainPage .userGuideArea div ol li strong::before{content: '0' counter(userGuide) ' '; color: #E6007E;}
+.mainPage .userGuideArea div ol li p{color: #666;}
+

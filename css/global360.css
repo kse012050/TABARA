@@ -1,0 +1,14 @@
+
+
+/* 해더 */
+header{height: 58px; padding-inline: 20px;}
+header h1 a{width: 78px;}
+header > button{text-indent: -9999px;}
+header > button::after{width: 30px;}
+
+/* 푸터 */
+footer{padding-block: 50px 100px;}
+footer strong{font-size: 16px; line-height: 19px; margin-bottom: 40px;}
+footer address{font-size: 13px; line-height: 16px; margin-bottom: 40px;}
+footer address dl:not(:last-of-type){margin-bottom: 7px;}
+footer::after{display: block; width: 130px;}

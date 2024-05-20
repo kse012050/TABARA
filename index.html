@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
-    <div>
+    <div class="mainPage">
         <header>
             <h1><a href="">TABARA</a></h1>
             <button>MENU</button>
@@ -29,14 +29,14 @@
             </nav>
         </header>
 
-        <section class="smartArea">
-            <h2>부산을 누리는 가장 스마트한 방법</h2>
-            <p>타바라는 부산광역시에서 운영하는 수요응답형 DRT 버스입니다.</p>
+        <section class="smartArea contentSize">
+            <h2>부산을 누리는<br class="mobile"> 가장 스마트한 방법</h2>
+            <p>타바라는 부산광역시에서<br class="mobile"> 운영하는 수요응답형 DRT 버스입니다.</p>
         </section>
 
-        <section class="toArea">
+        <section class="toArea contentSize">
             <h2>부산에선 타바라로</h2>
-            <ul>
+            <ul data-styleIdx>
                 <li>
                     <strong>더 빠르고</strong>
                     <p>
@@ -61,32 +61,32 @@
             </ul>
         </section>
 
-        <section class="thinkArea">
+        <section class="thinkArea contentSize">
             <h2>이럴 때 타바라를 떠올려주세요</h2>
-            <ul>
+            <ul data-styleIdx>
                 <li>
                     <strong>부산 여행 중에</strong>
                     <p>
-                        주요 관광지 중심의 정류장으로
-                        가장 빠르고 편안하게
+                        주요 관광지 중심의 정류장으로<br/>
+                        가장 빠르고 편안하게<br/>
                         부산을 즐기실 수 있어요.
                     </p>
                 </li>
                 <li>
                     <strong>아이와 함께일 때</strong>
                     <p>
-                        수요응답형 서비스로
-                        같은 거리도
-                        타바라와 함께라면
+                        수요응답형 서비스로<br/>
+                        같은 거리도<br/>
+                        타바라와 함께라면<br/>
                         더욱 빠른 경로로 갈 수 있어요.
                     </p>
                 </li>
                 <li>
                     <strong>출퇴근할 때</strong>
                     <p>
-                        예약 후 도착시간 안내부터
-                        좌석배치까지
-                        아이와 함께여도
+                        예약 후 도착시간 안내부터<br/>
+                        좌석배치까지<br/>
+                        아이와 함께여도<br/>
                         쾌적한 이동이 가능해요.
                     </p>
                 </li>
@@ -96,43 +96,43 @@
         <section class="userGuideArea">
             <h2>이용가이드</h2>
             <ul>
-                <li><button>호출하기</button></li>
+                <li><button class="active">호출하기</button></li>
                 <li><button>탑승하기</button></li>
             </ul>
             <div>
-                <ol>
+                <ol data-styleIdx class="active">
                     <li>
-                        <strong>01 승•하차지 설정</strong>
+                        <strong>승•하차지 설정</strong>
                         <p>
                             승/하차지 및 좌석수와
                             결제수단을 체크해주세요.
                         </p>
                     </li>
                     <li>
-                        <strong>02 호출 및 버스선택</strong>
+                        <strong>호출 및 버스선택</strong>
                         <p>
                             호출 후 탑승할
                             버스를 선택해주세요.
                         </p>
                     </li>
                     <li>
-                        <strong>03 탑승 준비</strong>
+                        <strong>탑승 준비</strong>
                         <p>
                             지정된 위치에서
                             탑승을 준비해주세요.
                         </p>
                     </li>
                 </ol>
-                <ol>
+                <ol data-styleIdx>
                     <li>
-                        <strong>04 주행 중 위치확인</strong>
+                        <strong>주행 중 위치확인</strong>
                         <p>
                             탑승 후 주행 중
                             현재 위치를 확인할 수 있어요.
                         </p>
                     </li>
                     <li>
-                        <strong>05 주행 완료</strong>
+                        <strong>주행 완료</strong>
                         <p>
                             완료 시 탑승경험에 대한
                             평가가 가능해요.
@@ -144,8 +144,8 @@
 
         <a href="">타바라 앱 다운로드</a>
 
-        <address>
-            <b>주식회사 원모빌리티</b>
+        <footer class="contentSize">
+            <strong>주식회사 원모빌리티</strong>
             <address>
                 <dl>
                     <dt>사업자등록번호</dt>
@@ -164,7 +164,7 @@
                     <dd>one@onemobility.co.kr</dd>
                 </dl>
             </address>
-        </address>
+        </footer>
     </div>
 </body>
 </html>

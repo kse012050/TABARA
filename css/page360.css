@@ -1,0 +1,38 @@
+.mainPage :is(.thinkArea, .userGuideArea){padding-block: 80px;}
+
+
+/* 메인 페이지 */
+.mainPage section h2{font-size: 26px; line-height: 34px;}
+
+/* 스마트한 방법 */
+.mainPage .smartArea h2{margin-bottom: 40px;}
+.mainPage .smartArea h2::after{width: 226px; margin-top: 20px;}
+.mainPage .smartArea p{font-size: 18px; line-height: 24px;}
+
+/* 부산에서 타바라로 */
+.mainPage .toArea h2{margin-bottom: 80px;}
+.mainPage .toArea ul li{position: relative; padding-left: 90px; text-align: left;}
+.mainPage .toArea ul li:not(:last-child){margin-bottom: 60px;}
+.mainPage .toArea ul li::before{width: 60px; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.mainPage .toArea ul li strong{font-size: 20px; line-height: 24px; margin-bottom: 12px;}
+.mainPage .toArea ul li p{font-size: 13px; line-height: 18px;}
+
+/* 떠올려주세요 */
+.mainPage .thinkArea h2{margin-bottom: 40px;}
+.mainPage .thinkArea ul li{width: 100%; max-width: 320px; aspect-ratio: 320 / 270; background-image: url(../images/img-main-m.png); margin-inline: auto;}
+.mainPage .thinkArea ul li:not(:last-child){margin-bottom: 20px;}
+.mainPage .thinkArea ul li strong{font-size: 20px; line-height: 24px; margin-bottom: 20px;}
+.mainPage .thinkArea ul li p{font-size: 13px; line-height: 18px;}
+
+/* 이용가이드 */
+.mainPage .userGuideArea h2{margin-bottom: 24px;}
+.mainPage .userGuideArea ul{margin-bottom: 40px; width: 100%; max-width: 360px; margin-inline: auto;}
+.mainPage .userGuideArea ul li{flex: 1;}
+.mainPage .userGuideArea ul li button{width: 100%; font-size: 16px; line-height: 50px; color: #999;}
+.mainPage .userGuideArea ul li button.active::after{bottom: 0; height: 2px;}
+.mainPage .userGuideArea div ol.active{display: block;}
+.mainPage .userGuideArea div ol li{max-width: 206px; margin-inline: auto;}
+.mainPage .userGuideArea div ol li::before{margin-bottom: 30px;}
+.mainPage .userGuideArea div ol li:not(:last-child){margin-bottom: 50px;}
+.mainPage .userGuideArea div ol li strong{font-size: 20px; line-height: 24px;}
+.mainPage .userGuideArea div ol li p{font-size: 13px; line-height: 18px;}

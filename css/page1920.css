@@ -1,0 +1,40 @@
+.mainPage :is(.thinkArea, .userGuideArea){height: var(--fullHeight); display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+
+/* 메인 페이지 */
+.mainPage section h2{font-size: 50px; line-height: 70px;}
+
+/* 스마트한 방법 */
+.mainPage .smartArea h2{margin-bottom: 60px;}
+.mainPage .smartArea h2::after{width: 466px; margin-top: 40px;}
+.mainPage .smartArea p{font-size: 26px; line-height: 42px;}
+
+/* 떠올려주세요 */
+.mainPage .toArea h2{margin-bottom: 100px;}
+.mainPage .toArea ul{display: flex; gap: 60px;}
+.mainPage .toArea ul li::before{width: 100px; margin-bottom: 40px;}
+.mainPage .toArea ul li strong{font-size: 34px; line-height: 41px; margin-bottom: 20px;}
+.mainPage .toArea ul li p{font-size: 24px; line-height: 32px;}
+
+/* 떠올려주세요 */
+.mainPage .thinkArea h2{margin-bottom: 80px;}
+.mainPage .thinkArea ul{width: 100%; display: flex; justify-content: center; align-items: flex-start; gap: 60px;}
+.mainPage .thinkArea ul li{flex: 1; aspect-ratio: 320 / 460; background-image: url(../images/img-main.png);}
+.mainPage .thinkArea ul li:nth-child(2){margin-top: 70px;}
+.mainPage .thinkArea ul li strong{font-size: 34px; line-height: 41px; margin-bottom: 30px;}
+.mainPage .thinkArea ul li p{font-size: 20px; line-height: 30px;}
+
+/* 이용가이드 */
+.mainPage .userGuideArea h2{margin-bottom: 30px;}
+.mainPage .userGuideArea ul{gap: 80px; margin-bottom: 64px;}
+.mainPage .userGuideArea ul li button{font-size: 24px; line-height: 29px; color: #999;}
+.mainPage .userGuideArea ul li button.active::after{bottom: -12px; height: 4px;}
+.mainPage .userGuideArea div{display: inline-block;}
+.mainPage .userGuideArea div ol{justify-content: center; gap: 60px;}
+.mainPage .userGuideArea div ol.active{display: flex;}
+.mainPage .userGuideArea div ol li{flex: 1;}
+.mainPage .userGuideArea div ol li::before{margin-bottom: 40px;}
+.mainPage .userGuideArea div ol:nth-of-type(1){width: 870px;}
+.mainPage .userGuideArea div ol:nth-of-type(2){width: 560px;}
+.mainPage .userGuideArea div ol li strong{font-size: 28px; line-height: 33px;}
+.mainPage .userGuideArea div ol li p{font-size: 20px; line-height: 30px;}

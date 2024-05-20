@@ -1,0 +1,26 @@
+
+/* 컨텐츠 사이즈 */
+.contentSize{padding-inline: max(calc((100% - 1080px) / 2), 20px);}
+
+
+/* 해더 */
+header{position: fixed; left: 0; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box;}
+header h1 a{display: block; aspect-ratio: 118 / 18; font-size: 10px; text-indent: -9999px; background-position: center; background-size: cover;}
+header > button{font-size: 18px; font-weight: 700; display: flex; align-items: center;}
+header > button::after{content: ''; --styleIdx: 0; aspect-ratio: 1; background-image: url(../images/icon-menu.png); background-position: left top calc(100% * var(--styleIdx)); background-size: cover;}
+header nav{display: none;}
+.mainPage header h1 a{background-image: url(../images/logo-white.png);}
+.mainPage header > button{color: white;}
+.mainPage header > button::after{--styleIdx: 0;}
+header.scroll{background-color: white;}
+header.scroll h1 a{background-image: url(../images/logo-black.png);}
+header.scroll > button::after{--styleIdx: 1;}
+
+
+/* 푸터 */
+footer{background-color: #24113C; color: white; text-align: left;}
+footer strong{display: block; font-weight: 700;}
+footer address dl{display: flex;}
+footer address dl dt{display: flex; align-items: center;}
+footer address dl dt::after{content: ':'; margin-inline: 0.4em;}
+footer::after{content: ''; aspect-ratio: 190 / 50; background: url(../images/icon-busan.png) no-repeat center / cover;}
