@@ -30,6 +30,10 @@ $(document).ready(function(){
     $('header nav button').click(function(){
         $('header nav').removeClass('active')
     })
+
+    $('.customerPage section ul li button').click(function(){
+        $(this).toggleClass('active');
+    })
 })
 
 // 기본 - 화면의 가로, 세로 크기 / 스크롤 존재가 있다면 스크롤 크기 없으면 0

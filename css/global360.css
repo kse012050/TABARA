@@ -2,6 +2,14 @@
 .fixedLink{left: 20px; right: 20px; bottom: 20px; height: 50px;}
 
 
+/* 페이저 */
+.pagerBox > a{width: 24px;}
+.pagerBox > a:first-of-type{margin-right: 10px;}
+.pagerBox > a:last-of-type{margin-left: 10px;}
+.pagerBox > ol{margin-inline: 10px;}
+.pagerBox > ol li a{width: 26px; font-size: 13px;}
+
+
 /* 해더 */
 header{height: 58px; padding-inline: 20px;}
 header h1 a{width: 78px;}

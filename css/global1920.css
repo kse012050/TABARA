@@ -5,6 +5,14 @@ br.mobile{display: none;}
 .fixedLink::after{content: ''; aspect-ratio: 1; width: 30px; background: url(../images/icon-download.png) no-repeat center / cover; margin-left: 20px;}
 
 
+/* 페이저 */
+.pagerBox > a{width: 30px;}
+.pagerBox > a:first-of-type{margin-right: 8px;}
+.pagerBox > a:last-of-type{margin-left: 8px;}
+.pagerBox > ol{margin-inline: 20px;}
+.pagerBox > ol li a{width: 30px; font-size: 16px;}
+
+
 /* 해더 */
 header{height: 100px; padding-inline: 40px;}
 header h1 a{width: 118px;}
@@ -15,6 +23,7 @@ header nav ul li a{font-size: 50px; line-height: 70px;}
 header nav address{font-size: 26px; line-height: 42px;}
 header nav address a{font-size: 50px; line-height: 70px; margin-top: 5px;}
 header nav button{right: 43px; top: 36px; width: 30px;}
+.customerPage header{border-bottom: 1px solid #DEDEDE;}
 
 
 /* 푸터 */

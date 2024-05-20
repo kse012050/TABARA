@@ -6,11 +6,20 @@
 .fixedLink{position: fixed; background-color: #E6007E; border-radius: 6px; color: white; font-weight: 700; display: flex; justify-content: center; align-items: center;}
 
 
+/* 페이저 */
+.pagerBox{margin-top: 40px;}
+.pagerBox > a{aspect-ratio: 1; background: url(../images/icon-pager.png) no-repeat left top calc(100% / (var(--totalIdx) - 1) * var(--styleIdx)) / 100%; text-indent: -9999px;}
+.pagerBox{display: flex; align-items: center; justify-content: center;}
+.pagerBox ol{display: flex; align-items: center; gap: 10px;}
+.pagerBox ol li a{text-align: center;}
+.pagerBox ol li a.active{font-weight: 700; color: #E6007E; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px;}
+
+
 /* 해더 */
 header{position: fixed; left: 0; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; z-index: 100;}
-header h1 a{display: block; aspect-ratio: 118 / 18; font-size: 10px; text-indent: -9999px; background-position: center; background-size: cover;}
+header h1 a{display: block; aspect-ratio: 118 / 18; font-size: 10px; text-indent: -9999px; background-image: url(../images/logo-black.png); background-position: center; background-size: cover;}
 header > button{font-size: 18px; font-weight: 700; display: flex; align-items: center;}
-header > button::after{content: ''; --styleIdx: 0; aspect-ratio: 1; background-image: url(../images/icon-menu.png); background-position: left top calc(100% * var(--styleIdx)); background-size: cover;}
+header > button::after{content: ''; --styleIdx: 1; aspect-ratio: 1; background-image: url(../images/icon-menu.png); background-position: left top calc(100% * var(--styleIdx)); background-size: cover;}
 header nav{display: none; flex-direction: column; justify-content: space-between; position: fixed; right: 0; top: 0; height: 100%; width: 50%; background-color: rgba(17, 9, 26, 0.80); backdrop-filter: blur(10px); font-weight: 700; text-align: left; box-sizing: border-box;}
 header nav.active{display: flex;}
 header nav ul li:not(:last-child){margin-bottom: 40px;}
@@ -22,9 +31,9 @@ header nav button{position: absolute; aspect-ratio: 1; background: url(../images
 .mainPage header h1 a{background-image: url(../images/logo-white.png);}
 .mainPage header > button{color: white;}
 .mainPage header > button::after{--styleIdx: 0;}
-header.scroll{background-color: white;}
-header.scroll h1 a{background-image: url(../images/logo-black.png);}
-header.scroll > button::after{--styleIdx: 1;}
+.mainPage header.scroll{background-color: white;}
+.mainPage header.scroll h1 a{background-image: url(../images/logo-black.png);}
+.mainPage header.scroll > button::after{--styleIdx: 1;}
 
 
 /* 푸터 */

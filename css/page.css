@@ -34,3 +34,17 @@
 .mainPage .userGuideArea div ol li strong::before{content: '0' counter(userGuide) ' '; color: #E6007E;}
 .mainPage .userGuideArea div ol li p{color: #666;}
 
+
+/* 고객센터 */
+.customerPage section h2{font-weight: 700;}
+.customerPage section .linkArea{display: flex; margin-bottom: 40px;}
+.customerPage section .linkArea a{color: #999; font-weight: 700; line-height: 30px;}
+.customerPage section .linkArea a.active{color: #E6007E;}
+.customerPage section ul{border-top: 1px solid #222;}
+.customerPage section ul li{border-bottom: 1px solid #DEDEDE;}
+.customerPage.questionPage section ul li button::after{--styleIdx: 0; content: ''; aspect-ratio: 1; background: url(../images/icon-plus-minus.png) no-repeat left top calc(100% * var(--styleIdx)) / 100%;}
+.customerPage.questionPage section ul li div{display: none; box-sizing: border-box; border-top: 1px solid #DEDEDE; background-color: #F8F8F8;}
+.customerPage.questionPage section ul li button.active::after{--styleIdx: 1;}
+.customerPage.questionPage section ul li button.active + div{display: block;}
+.customerPage.announcementPage section ul li a p{font-weight: 700;}
+.customerPage.announcementPage section ul li a time{margin-left: auto;}

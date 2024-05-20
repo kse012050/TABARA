@@ -36,3 +36,18 @@
 .mainPage .userGuideArea div ol li:not(:last-child){margin-bottom: 50px;}
 .mainPage .userGuideArea div ol li strong{font-size: 20px; line-height: 24px;}
 .mainPage .userGuideArea div ol li p{font-size: 13px; line-height: 18px;}
+
+/* 고객센터 */
+.customerPage section{padding-block: 98px 100px;}
+.customerPage section h2{font-size: 32px; line-height: 38px; margin-bottom: 30px;}
+.customerPage section .linkArea{gap: 40px;}
+.customerPage section .linkArea a{font-size: 18px;}
+.customerPage:is(.questionPage, .announcementPage) section ul li :is(a, button){font-size: 15px; line-height: 26px;}
+.customerPage.questionPage section ul li button{width: 100%; display: flex; align-items: center; justify-content: space-between; font-weight: 700;}
+.customerPage.questionPage section ul li button{padding-inline: 10px; font-size: 15px; line-height: 26px; min-height: 86px;}
+.customerPage.questionPage section ul li button::after{width: 22px;}
+.customerPage.questionPage section ul li div{padding: 30px 20px; font-size: 15px; line-height: 20px;}
+.customerPage.announcementPage section ul li a{padding: 30px 10px;}
+.customerPage.announcementPage section ul li a span{display: none;}
+.customerPage.announcementPage section ul li a p{margin-bottom: 7px;}
+.customerPage.announcementPage section ul li a time{font-size: 13px; color: #999;}

@@ -38,3 +38,18 @@
 .mainPage .userGuideArea div ol:nth-of-type(2){width: 560px;}
 .mainPage .userGuideArea div ol li strong{font-size: 28px; line-height: 33px;}
 .mainPage .userGuideArea div ol li p{font-size: 20px; line-height: 30px;}
+
+
+/* 고객센터 */
+.customerPage section{padding-block: 240px 140px;}
+.customerPage section h2{font-size: 40px; line-height: 48px; margin-bottom: 60px;}
+.customerPage section .linkArea{gap: 60px;}
+.customerPage section .linkArea a{font-size: 20px;}
+.customerPage:is(.questionPage, .announcementPage) section ul li{font-size: 18px; line-height: 26px;}
+.customerPage:is(.questionPage, .announcementPage) section ul li :is(a, button){min-height: 106px;}
+.customerPage.questionPage section ul li button{width: 100%; display: flex; align-items: center; justify-content: space-between; font-weight: 700;}
+.customerPage.questionPage section ul li button{padding-inline: 30px 20px;}
+.customerPage.questionPage section ul li button::after{width: 30px;}
+.customerPage.questionPage section ul li div{padding: 40px 30px;}
+.customerPage.announcementPage section ul li a{}
+.customerPage.announcementPage section ul li a{display: flex; align-items: center; padding-inline: 30px; gap: 40px;}
