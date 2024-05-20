@@ -1,9 +1,20 @@
 br.mobile{display: none;}
 
+
+.fixedLink{right: 60px; bottom: 60px; font-size: 20px; width: 278px; height: 72px;}
+.fixedLink::after{content: ''; aspect-ratio: 1; width: 30px; background: url(../images/icon-download.png) no-repeat center / cover; margin-left: 20px;}
+
+
 /* 해더 */
 header{height: 100px; padding-inline: 40px;}
 header h1 a{width: 118px;}
 header > button::after{width: 36px; margin-left: 12px;}
+header nav{color: rgba(255, 255, 255, 0.5); min-width: 550px; padding: 160px 80px 100px;}
+header nav ul li:not(:last-child){margin-bottom: 40px;}
+header nav ul li a{font-size: 50px; line-height: 70px;}
+header nav address{font-size: 26px; line-height: 42px;}
+header nav address a{font-size: 50px; line-height: 70px; margin-top: 5px;}
+header nav button{right: 43px; top: 36px; width: 30px;}
 
 
 /* 푸터 */
