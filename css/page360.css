@@ -42,12 +42,25 @@
 .customerPage section h2{font-size: 32px; line-height: 38px; margin-bottom: 30px;}
 .customerPage section .linkArea{gap: 40px;}
 .customerPage section .linkArea a{font-size: 18px;}
+
+/* 고객센터 - 자주하는 질문, 공지사항 공통 */
 .customerPage:is(.questionPage, .announcementPage) section ul li :is(a, button){font-size: 15px; line-height: 26px;}
+
+/* 고객센터 - 자주하는 질문 */
 .customerPage.questionPage section ul li button{width: 100%; display: flex; align-items: center; justify-content: space-between; font-weight: 700;}
 .customerPage.questionPage section ul li button{padding-inline: 10px; font-size: 15px; line-height: 26px; min-height: 86px;}
 .customerPage.questionPage section ul li button::after{width: 22px;}
 .customerPage.questionPage section ul li div{padding: 30px 20px; font-size: 15px; line-height: 20px;}
-.customerPage.announcementPage section ul li a{padding: 30px 10px;}
+
+/* 고객센터 - 공지사항 */
+.customerPage.announcementPage section ul li a{padding: 30px 10px; display: block;}
 .customerPage.announcementPage section ul li a span{display: none;}
 .customerPage.announcementPage section ul li a p{margin-bottom: 7px;}
 .customerPage.announcementPage section ul li a time{font-size: 13px; color: #999;}
+
+/* 고객센터 - 공지사항 - 상세 */
+.customerPage.announcementDetailPage section .titleArea{padding-block: 30px;}
+.customerPage.announcementDetailPage section .titleArea strong{margin-bottom: 12px;}
+.customerPage.announcementDetailPage section .titleArea time{font-size: 13px; line-height: 16px;}
+.customerPage.announcementDetailPage section .detailArea{font-size: 15px; line-height: 20px; padding: 40px 20px; min-height: 300px;}
+.customerPage.announcementDetailPage section > a{height: 50px; font-size: 15px; margin-top: 40px;}

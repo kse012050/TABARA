@@ -27,11 +27,11 @@ header nav ul li a:hover{color: #E6007E;}
 header nav address a{display: block;}
 header nav button{position: absolute; aspect-ratio: 1; background: url(../images/icon-close.png) no-repeat center / cover; text-indent: -9999px;}
 
+header.scroll{background-color: white; border-bottom: 1px solid #dedede;}
 
 .mainPage header h1 a{background-image: url(../images/logo-white.png);}
 .mainPage header > button{color: white;}
 .mainPage header > button::after{--styleIdx: 0;}
-.mainPage header.scroll{background-color: white;}
 .mainPage header.scroll h1 a{background-image: url(../images/logo-black.png);}
 .mainPage header.scroll > button::after{--styleIdx: 1;}
 
