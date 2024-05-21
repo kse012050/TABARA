@@ -24,14 +24,17 @@
 .mainPage .userGuideArea ul li button{font-weight: 700;}
 .mainPage .userGuideArea ul li button.active{position: relative; color: black;}
 .mainPage .userGuideArea ul li button.active::after{content: ''; position: absolute; left: 0; width: 100%; background-color: #E6007E;}
+.mainPage .userGuideArea div{position: relative;}
 .mainPage .userGuideArea div ol{display: none;}
 .mainPage .userGuideArea div ol li::before{content: ''; display: block; aspect-ratio: 250 / 460; background-position: left top calc(100% / (var(--totalIdx) - 1) * var(--styleIdx)); background-size: 100%;}
-.mainPage .userGuideArea div ol li{counter-increment: userGuide;}
-.mainPage .userGuideArea div ol:nth-of-type(2) li{counter-reset: 4;}
+.mainPage .userGuideArea div ol li{counter-increment: userGuide; counter-set: 2;}
+/* .mainPage .userGuideArea div ol:nth-of-type(2) li{counter-set: userGuide 4;} */
 .mainPage .userGuideArea div ol:nth-of-type(1) li::before{background-image: url(../images/img-userGuide01.png);}
 .mainPage .userGuideArea div ol:nth-of-type(2) li::before{background-image: url(../images/img-userGuide02.png);}
 .mainPage .userGuideArea div ol li strong{font-weight: 700; display: block; margin-bottom: 12px;}
 .mainPage .userGuideArea div ol li strong::before{content: '0' counter(userGuide) ' '; color: #E6007E;}
+.mainPage .userGuideArea div ol:nth-of-type(2) li:nth-child(1) strong:before{content: '04 ';}
+.mainPage .userGuideArea div ol:nth-of-type(2) li:nth-child(2) strong:before{content: '05 ';}
 .mainPage .userGuideArea div ol li p{color: #666;}
 
 

@@ -3,7 +3,7 @@
 .contentSize{padding-inline: max(calc((100% - 1080px) / 2), 20px);}
 
 
-.fixedLink{position: fixed; background-color: #E6007E; border-radius: 6px; color: white; font-weight: 700; display: flex; justify-content: center; align-items: center;}
+.fixedLink{position: fixed; background-color: #E6007E; border-radius: 6px; color: white; font-weight: 700; display: flex; justify-content: center; align-items: center; z-index: 10;}
 
 
 /* 페이저 */
@@ -18,7 +18,7 @@
 /* 해더 */
 header{position: fixed; left: 0; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; z-index: 100;}
 header h1 a{display: block; aspect-ratio: 118 / 18; font-size: 10px; text-indent: -9999px; background-image: url(../images/logo-black.png); background-position: center; background-size: cover;}
-header > button{font-size: 18px; font-weight: 700; display: flex; align-items: center;}
+header > button{font-size: 18px; font-weight: 700; display: flex; align-items: center; color: #666;}
 header > button::after{content: ''; --styleIdx: 1; aspect-ratio: 1; background-image: url(../images/icon-menu.png); background-position: left top calc(100% * var(--styleIdx)); background-size: cover;}
 header nav{display: none; flex-direction: column; justify-content: space-between; position: fixed; right: 0; top: 0; height: 100%; width: 50%; background-color: rgba(17, 9, 26, 0.80); backdrop-filter: blur(10px); font-weight: 700; text-align: left; box-sizing: border-box;}
 header nav.active{display: flex;}
@@ -33,6 +33,7 @@ header.scroll{background-color: white; border-bottom: 1px solid #dedede;}
 .mainPage header > button{color: white;}
 .mainPage header > button::after{--styleIdx: 0;}
 .mainPage header.scroll h1 a{background-image: url(../images/logo-black.png);}
+.mainPage header.scroll > button{color: #666;}
 .mainPage header.scroll > button::after{--styleIdx: 1;}
 
 

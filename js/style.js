@@ -16,6 +16,15 @@ $(document).ready(function(){
         $('.userGuideArea div ol').eq($(this).parent().index()).addClass('active')
     })
 
+    
+    $('.userGuideArea div button').click(function(){
+        console.log($('.userGuideArea div button').index(this));
+        $('.userGuideArea ul li button').removeClass('active')
+        $('.userGuideArea ul li button').eq($('.userGuideArea div button').index(this)).addClass('active')
+        $('.userGuideArea div ol').removeClass('active')
+        $('.userGuideArea div ol').eq($('.userGuideArea div button').index(this)).addClass('active')
+    })
+
     $(window).scroll(function(){
         if($(this).scrollTop() > 0){
             $('header').addClass('scroll')
@@ -31,9 +40,10 @@ $(document).ready(function(){
         $('header nav').removeClass('active')
     })
 
-    $('.customerPage section ul li button').click(function(){
+/*     $('.customerPage section ul li button').click(function(){
         $(this).toggleClass('active');
-    })
+    }) */
+
 })
 
 // 기본 - 화면의 가로, 세로 크기 / 스크롤 존재가 있다면 스크롤 크기 없으면 0
