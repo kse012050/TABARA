@@ -1,3 +1,5 @@
+html:has(.mainPage){scroll-behavior: smooth;}
+
 
 /* 메인 페이지 */
 .mainPage section h2{font-weight: 700;}
@@ -6,7 +8,7 @@
 /* 스마트한 방법 */
 .mainPage{text-align: center;}
 .mainPage .smartArea{background: url(../images/img-mainBG01.png) no-repeat center / cover; color: white;}
-.mainPage .smartArea h2::after{content: ''; display: block; aspect-ratio: 466 / 70; background: url(../images/logo-white.png) no-repeat center / cover; margin-inline: auto;}
+.mainPage .smartArea h2::after{content: ''; display: block; aspect-ratio: 480 / 70; background: url(../images/logo-white.png) no-repeat center / cover; margin-inline: auto;}
 
 /* 부산에서 타바라로 */
 .mainPage .toArea{background: url(../images/img-mainBG02.png) no-repeat center / cover; color: white;}
@@ -47,9 +49,9 @@
 .customerPage section ul li{border-bottom: 1px solid #DEDEDE;}
 
 /* 고객센터 - 자주하는 질문 */
-.customerPage.questionPage section ul li button::after{--styleIdx: 0; content: ''; aspect-ratio: 1; background: url(../images/icon-plus-minus.png) no-repeat left top calc(100% * var(--styleIdx)) / 100%;}
+.customerPage.questionPage section ul li button::after{--styleIdx: 1; content: ''; aspect-ratio: 1; background: url(../images/icon-plus-minus.png) no-repeat left top calc(100% * var(--styleIdx)) / 100%;}
 .customerPage.questionPage section ul li div{display: none; box-sizing: border-box; border-top: 1px solid #DEDEDE; background-color: #F8F8F8;}
-.customerPage.questionPage section ul li button.active::after{--styleIdx: 1;}
+.customerPage.questionPage section ul li button.active::after{--styleIdx: 0;}
 .customerPage.questionPage section ul li button.active + div{display: block;}
 
 /* 고객센터 - 공지사항 */

@@ -15,7 +15,7 @@ br.mobile{display: none;}
 
 /* 해더 */
 header{height: 100px; padding-inline: 40px;}
-header h1 a{width: 118px;}
+header h1 a{width: 122px;}
 header > button::after{width: 36px; margin-left: 12px;}
 header nav{color: rgba(255, 255, 255, 0.5); min-width: 550px; padding: 160px 80px 100px;}
 header nav ul li:not(:last-child){margin-bottom: 40px;}

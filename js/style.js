@@ -8,6 +8,10 @@ $(document).ready(function(){
     // 스타일 인덱스
     styleIdx();
 
+    $('.mainPage header nav ul li a').click(function(){
+        $('header nav').removeClass('active')
+    })
+
 
     $('.userGuideArea ul li button').click(function(){
         $('.userGuideArea ul li button').removeClass('active')
@@ -18,7 +22,6 @@ $(document).ready(function(){
 
     
     $('.userGuideArea div button').click(function(){
-        console.log($('.userGuideArea div button').index(this));
         $('.userGuideArea ul li button').removeClass('active')
         $('.userGuideArea ul li button').eq($('.userGuideArea div button').index(this)).addClass('active')
         $('.userGuideArea div ol').removeClass('active')
@@ -40,9 +43,9 @@ $(document).ready(function(){
         $('header nav').removeClass('active')
     })
 
-/*     $('.customerPage section ul li button').click(function(){
+    $('.customerPage section ul li button').click(function(){
         $(this).toggleClass('active');
-    }) */
+    })
 
 })
 
