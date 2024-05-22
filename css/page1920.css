@@ -1,6 +1,6 @@
 .mainPage :is(.thinkArea, .userGuideArea){display: flex; flex-direction: column; justify-content: center; align-items: center;}
-.mainPage :is(.thinkArea){height: var(--fullHeight);}
-.mainPage :is(.userGuideArea){height: calc(var(--fullHeight) + 100px);}
+.mainPage :is(.thinkArea){height: var(--fullHeight); min-height: 960px;}
+.mainPage :is(.userGuideArea){height: calc(var(--fullHeight) + 100px); min-height: 1060px;}
 
 
 /* 메인 페이지 */
